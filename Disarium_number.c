@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,b=0,c,i,x,y,z,n=0,m;
+    scanf("%d",&a);
+    y=a;
+    m=a;
+    while(a>0)
+    {
+        i=a%10;
+        b=b+1;
+        a=a/10;
+    }
+    for(c=b;c>=1;c--)
+    {
+      x=y%10;
+      z=pow(x,c);
+      n=n+z;
+      y=y/10;
+    }
+    if(n==m)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
