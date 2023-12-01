@@ -1,17 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int t,n,m,k,a,b,c;
-    scanf("%d%d%d%d%d%d%d",&t,&n,&m,&k,&a,&b,&c);
-    if((m-k)>=n)
+    int t,i,n,m,k;
+    scanf("%d",&t,&n,&m,&k);
+    for(i=1;i<=t;i++)
+    {
+        scanf("%d%d%d",&n,&m,&k);
+    if((n+k)<=m)
     printf("YES
 ");
-    else
+    else 
     printf("NO
 ");
-    if((b-c)>=a)
-    printf("YES
-");
-    else
-    printf("NO");
+    }
 }
