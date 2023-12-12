@@ -1,0 +1,58 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e,f,g,h,i,t,p,q;
+    scanf("%d",&t);
+    for(a=1;a<=t;a++)
+    {
+        scanf("%d",&b);
+        for(c=b;c>=b;c++)
+        {
+            d=c;
+            f=0;
+            for(e=1;e<=d;e++)
+            {
+                if(d%e==0)
+                {
+                    f=f+1;
+                }
+            }
+            if(f==2)
+            {
+                p=c;
+                break;
+            }
+        }
+        for(g=b;g<=b;g--)
+        {
+            i=0;
+            for(h=1;h<=g;h++)
+            {
+                if(g%h==0)
+                {
+                    i=i+1;
+                }
+            }
+            if(i==2)
+            {
+                q=g;
+                break;
+            }
+        }
+        if(p-b==b-q)
+        { 
+        if(q>p)
+        printf("%d
+",p);
+        else
+        printf("%d
+",q);
+        }
+        else if(p-b>b-q)
+        printf("%d
+",q);
+        else
+        printf("%d
+",p);
+    }
+}
